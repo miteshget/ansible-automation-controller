@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/name: test1
     app.kubernetes.io/operator-version: ''
     app.kubernetes.io/part-of: test1
-    {{- include "ansible-automation-controller.labels" . | nindent 4 }}
+    {{- include "controller.labels" . | nindent 4 }}
   name: test1
   namespace: aap
 spec:
