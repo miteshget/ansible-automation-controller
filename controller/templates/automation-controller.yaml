@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/operator-version: ''
     app.kubernetes.io/part-of: test1
     {{- include "controller.labels" . | nindent 4 }}
-  name: test1
+  name: {{ include "controller.fullname" . }}
   namespace: aap
 spec:
   create_preload_data: true
